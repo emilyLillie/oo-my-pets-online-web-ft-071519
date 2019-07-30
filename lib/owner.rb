@@ -60,5 +60,7 @@ class Owner
     Dog.all.collect {|dog| dog.owner = nil}
   end
     
+  def list_pets
+    
   
 end
