@@ -47,6 +47,7 @@ class Owner
   
   def feed_cats
     @cats.each {|cat| cat.mood == "happy"}
+    # go into cats, go into cats that self owns, change mood to happy
   end 
   
 end
