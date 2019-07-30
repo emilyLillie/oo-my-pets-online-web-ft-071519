@@ -54,6 +54,7 @@ class Owner
   end
   
   def sell_pets
+    pets = @cats + @dogs 
     
   
 end
