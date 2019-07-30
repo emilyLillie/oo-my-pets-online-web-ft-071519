@@ -58,6 +58,5 @@ class Owner
     Dog.all.collect {|dog| dog.mood = "nervous"}
   end
     
-  end 
   
 end
