@@ -1,14 +1,11 @@
 class Owner
   attr_reader :name, :species 
-  attr_accessor :cats, :dogs 
   @@all = []
   
   def initialize(name)
     @name = name 
     @species = "human"
     @@all << self 
-    # @@cats = []
-    # @@dogs = []
   end
   
   def say_species
