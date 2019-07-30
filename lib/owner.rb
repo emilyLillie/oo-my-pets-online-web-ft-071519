@@ -26,6 +26,7 @@ class Owner
   
   def buy_cat(name)
     cat = Cat.new(name, self.name)
-    
+    cat.owner = self 
+  end 
   
 end
