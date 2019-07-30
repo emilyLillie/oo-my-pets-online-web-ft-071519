@@ -45,6 +45,10 @@ class Owner
     Dog.all.select {|dog| dog.owner == self}
   end 
   
+  def walk_dogs
+    Dogs.all.collect {|dog| dog.mood = "happy"}
+  end 
+  
   def feed_cats
     Cat.all.collect {|cat| cat.mood = "happy"}
   end
