@@ -14,7 +14,7 @@ class Owner
   end 
   
   def cats 
-    @pets[1]
+    @pets[cats]
   end 
   
   def self.all
