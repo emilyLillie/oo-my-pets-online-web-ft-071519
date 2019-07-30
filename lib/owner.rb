@@ -6,6 +6,7 @@ class Owner
     @name = name 
     @species = "human"
     @@all << self 
+    @cats = []
   end
   
   def say_species
@@ -42,7 +43,7 @@ class Owner
     Dog.all.select {|dog| dog.owner == self}
   end 
   
-  def walk_dogs
+  def feed_cats
     Dog.collect {|dog| dog.mood == "happy"}
   end 
   
