@@ -7,8 +7,8 @@ class Owner
     @name = name 
     @species = "human"
     @@all << self 
-    @cats = []
-    @dogs = []
+    # @cats = []
+    # @dogs = []
   end
   
   def say_species
@@ -54,13 +54,11 @@ class Owner
   end
   
   def sell_pets
-    pets = @cats + @dogs 
-    pets.each {|pet| 
-      pet.mood = "nervous"
-      pet.owner = nil 
-    }
-    @dogs = []
-    @cats = []
+    def feed_cats
+    Cat.all.collect {|cat| cat.mood = "nervous"}
+    Dog.all.collect {|dog| dog.mood = "nervous"}
+  end
+    
   end 
   
 end
