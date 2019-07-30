@@ -6,15 +6,10 @@ class Owner
     @name = name 
     @species = "human"
     @@all << self 
-    @@pets = {:dogs => [], :cats => []}
   end
   
   def say_species
     "I am a human."
-  end 
-  
-  def cats 
-    @@pets[:cats]
   end 
   
   def self.all
@@ -28,5 +23,7 @@ class Owner
   def self.reset_all
     @@all.clear
   end 
+  
+  def buy_cat
   
 end
