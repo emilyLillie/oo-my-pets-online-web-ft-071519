@@ -57,6 +57,8 @@ class Owner
     def feed_cats
     Cat.all.collect {|cat| cat.mood = "nervous"}
     Dog.all.collect {|dog| dog.mood = "nervous"}
+    Cat.all.clear
+    Dog.all.clear
   end
     
   end 
